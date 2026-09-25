@@ -1,205 +1,136 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
-
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="code2.css">
   <title>إنجازات مصر في التحول الرقمي والتعليم</title>
 </head>
-
 <body>
   <nav class="navbar">
-    <h2 class="topic">بوابة مصر الرقمية والتعليمية</h2>
+    <h2 class="topic" data-ar="بوابة مصر الرقمية والتعليمية" data-en="Egypt Digital & Education Portal">بوابة مصر الرقمية والتعليمية</h2>
     <div class="navlinks">
-      <a href="#A1" class="hero">المنصات التعليمية</a>
-      <a href="#A4" class="L1">المبادرات الرقمية</a>
-      <a href="#cards" class="L2">مشروعات الدولة</a>
-      <a href="#List" class="L3">قائمة اهتماماتي</a>
-      <a href="#rate" class="L4">آراؤكم واستفساراتكم</a>
+      <a href="#A1" data-ar="المنصات التعليمية" data-en="Platforms">المنصات التعليمية</a>
+      <a href="#A4" data-ar="المبادرات الرقمية" data-en="Initiatives">المبادرات الرقمية</a>
+      <a href="#cards" data-ar="مشروعات الدولة" data-en="Projects">مشروعات الدولة</a>
+      <a href="#List" data-ar="قائمة اهتماماتي" data-en="My List">قائمة اهتماماتي</a>
+      <a href="#rate" data-ar="آراؤكم" data-en="Feedback">آراؤكم واستفساراتكم</a>
+    </div>
+    <!-- زراير التحكم الجديدة -->
+    <div style="margin-top:15px; display:flex; gap:10px; justify-content:center;">
+      <button type="button" id="themeToggle">🌙 الوضع الداكن</button>
+      <button type="button" id="langToggle">English</button>
     </div>
   </nav>
-  
+
+  <!-- مكان البحث -->
+  <div id="searchArea">
+    <h2 data-ar="ابحث عن منصة أو مبادرة" data-en="Search for a platform">ابحث عن منصة أو مبادرة</h2>
+    <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+      <input type="text" id="searchInput" placeholder="مثال: بنك المعرفة، مصر الرقمية...">
+      <button type="button" id="searchBtn" data-ar="بحث" data-en="Search">بحث</button>
+    </div>
+    <p id="searchResult"></p>
+  </div>
+
   <div id="hero">
-    <h1>إنجازات التحول الرقمي في مصر</h1>
-    <h2 class="text">منظومة التعليم والمشروعات القومية الرقمية</h2>
+    <h1 data-ar="إنجازات التحول الرقمي في مصر" data-en="Egypt's Digital Transformation Achievements">إنجازات التحول الرقمي في مصر</h1>
+    <h2 class="text" data-ar="منظومة التعليم والمشروعات القومية الرقمية" data-en="Education System & National Digital Projects">منظومة التعليم والمشروعات القومية الرقمية</h2>
     <img src="picture1.jpg" alt="التحول الرقمي في مصر">
   </div>
-  
-  <!-- Section 1 -->
+
   <div id="A1">
-    <h2>بنك المعرفة المصري (EKB)</h2>
-    <p>يُعد بنك المعرفة المصري أحد أكبر المكتبات الرقمية والمجالس العلمية على مستوى العالم، ويشكل البنية التحتية الأساسية للتحول الرقمي في التعليم العالي والتربية والتعليم في مصر.</p>
-    <button type="button" onclick="toggleContent('myText')">اقرأ المزيد</button><br>
-    <div id="myText" style="display: none;">
-      <h3>أبرز المميزات الإنجازية</h3>
-      <ul>
-        <li>الإتاحة المفتوحة: يوفر الملايين من المصادر العلمية، والكتب الإلكترونية، والدوريات العالمية مجاناً لكافة المواطنين المصريين.</li><hr>
-        <li>الربط بالمناهج: تم دمج محتوى بنك المعرفة مع المناهج الدراسية لجميع المراحل من خلال شجرة المحتوى التفاعلية.</li><hr>
-        <li>دعم البحث العلمي: إتاحة قواعد بيانات عالمية للباحثين والمبتكرين بالتعاون مع أكبر دور النشر الدولية.</li>
-      </ul>
-    </div><br>
+    <h2 data-ar="بنك المعرفة المصري (EKB)" data-en="Egyptian Knowledge Bank (EKB)">بنك المعرفة المصري (EKB)</h2>
+    <p data-ar="يُعد بنك المعرفة المصري أحد أكبر المكتبات الرقمية..." data-en="The Egyptian Knowledge Bank is one of the largest digital libraries...">يُعد بنك المعرفة المصري أحد أكبر المكتبات الرقمية والمجالس العلمية على مستوى العالم...</p>
+    <button type="button" onclick="toggleContent('myText')" data-ar="اقرأ المزيد" data-en="Read More">اقرأ المزيد</button>
+    <a href="https://www.ekb.eg" target="_blank"><button type="button" data-ar="الذهاب للمنصة" data-en="Go to Platform">الذهاب للمنصة</button></a>
+    <div id="myText" style="display: none;"><h3>أبرز المميزات</h3><ul><li>الإتاحة المفتوحة...</li><hr><li>الربط بالمناهج...</li><hr><li>دعم البحث العلمي...</li></ul></div><br>
     <img src="picture2.jpg" alt="بنك المعرفة المصري"><br>
   </div>
-  
-  <!-- Section 2 -->
+
   <div id="A2">
-    <h2>منظومة الامتحانات والإدارة الإلكترونية</h2>
-    <p>نجحت وزارة التربية والتعليم في تطبيق أكبر نظام تقييم إلكتروني في الشرق الأوسط لمرحلة الثانوية العامة، مع تحويل إدارة الشؤون المدرسية إلى أنظمة رقمية متكاملة.</p>
-    <button type="button" onclick="toggleContent('myText2')">اقرأ المزيد</button><br>
-    <div id="myText2" style="display: none;">
-      <h3>تفاصيل المنظومة الرقمية</h3>
-      <ul>
-        <li>البنية التحتية بالمدارس: توصيل الألياف الضوئية (Fibres) وشبكات Wi-Fi لأكثر من 2500 مدرسة ثانوية على مستوى الجمهورية.</li><hr>
-        <li>توزيع التابلت المدرسي: توزيع ملايين الأجهزة اللوحية (التابلت) المزودة بشراائح الاتصالات والمحتوى الرقمي للطلاب.</li><hr>
-        <li>مراكز التصحيح الإلكتروني: بناء شبكة أمان رقمية للتصحيح المركزي الإلكتروني للاختبارات دون أي تدخل بشري.</li>
-      </ul>
-    </div><br>
-    <img src="picture3.jpg" alt="الامتحانات الإلكترونية والتابلت"><br>
+    <h2 data-ar="منظومة الامتحانات والإدارة الإلكترونية" data-en="E-Exams & Management System">منظومة الامتحانات والإدارة الإلكترونية</h2>
+    <p>نجحت وزارة التربية والتعليم في تطبيق أكبر نظام تقييم إلكتروني...</p>
+    <button type="button" onclick="toggleContent('myText2')">اقرأ المزيد</button>
+    <a href="https://moe.gov.eg" target="_blank"><button type="button">الذهاب للوزارة</button></a><br>
+    <div id="myText2" style="display: none;"><h3>تفاصيل المنظومة</h3><ul><li>البنية التحتية...</li><hr><li>توزيع التابلت...</li><hr><li>مراكز التصحيح...</li></ul></div><br>
+    <img src="picture3.jpg" alt="الامتحانات"><br>
   </div>
-  
-  <!-- Section 3 -->
+
   <div id="A3">
     <h2>منصات التعلم والتواصل (مدرستنا وقنوات البث)</h2>
-    <p>تطوير منظومة قنوات "مدرستنا" بالتوازي مع المنصات التفاعلية أتاح للطلاب الحصول على حصص وشروحات ممتازة على مدار الساعة بأساليب متطورة.</p>
+    <p>تطوير منظومة قنوات "مدرستنا"...</p>
     <button type="button" onclick="toggleContent('myContent')">اقرأ المزيد</button>
-    <div id="myContent" style="display: none;">
-      <h3>شبكة التعلم التفاعلي</h3>
-      <ul>
-        <li>قنوات مدرستنا (1، 2، 3): تغطية شاملة للمناهج الدراسية من الابتدائية حتى الثانوية بإشراف نخبة من أفضل المعلمين.</li><hr>
-        <li>منصة البث المباشر: إجراء حصص افتراضية تتيح التواصل المباشر بين الطلاب وأصحاب الخبرة التعليمية.</li><hr>
-        <li>تطبيق مدرستنا بلس: تطبيق ذكي يجمع كل الشروحات والتطبيقات في مكان واحد لسهولة الوصول إليها عبر الهاتف.</li>
-      </ul>
-    </div><br>
-    <img src="picture4.jpg" alt="منصة وقنوات مدرستنا"><br>
+    <a href="https://madrasetna.edu.eg" target="_blank"><button type="button">الذهاب لمنصة مدرستنا</button></a>
+    <div id="myContent" style="display: none;"><h3>شبكة التعلم التفاعلي</h3><ul><li>قنوات مدرستنا...</li><hr><li>منصة البث المباشر...</li><hr><li>تطبيق مدرستنا بلس...</li></ul></div><br>
+    <img src="picture4.jpg" alt="مدرستنا"><br>
   </div>
-  
-  <!-- Section 4 -->
+
   <div id="A4">
     <h2>مدارس التكنولوجيا التطبيقية والذكاء الاصطناعي</h2>
-    <p>إعادة صياغة التعليم الفني والمهني بمصر ليواكب متطلبات الثورة الصناعية الرابعة واحتياجات سوق العمل الحديث عالمياً ومحلياً.</p>
-    <button type="button" onclick="toggleContent('myContent2')">اقرأ المزيد</button><br>
-    <div id="myContent2" style="display: none;">
-      <h3>تحول التعليم الفني</h3>
-      <ul>
-        <li>الشراكة مع القطاع الخاص: تشغيل المدارس بالتعاون مع رواد الصناعة والتكنولوجيا بمصر لتأهيل الطلاب ميدانياً.</li><hr>
-        <li>التخصصات الحديثة: إدخال تخصصات البرمجة، الذكاء الاصطناعي، الاتصالات، الشبكات، والتقنيات الحيوية.</li><hr>
-        <li>الشهادات الدولية: إتاحة شهادات معتمدة دولياً تمكن الخريجين من المنافسة في الأسواق العالمية.</li>
-      </ul>
-    </div><br>
-    <img src="picture5.jpg" alt="مدارس التكنولوجيا التطبيقية"><br>
+    <p>إعادة صياغة التعليم الفني والمهني...</p>
+    <button type="button" onclick="toggleContent('myContent2')">اقرأ المزيد</button>
+    <a href="https://iatseg.moe.gov.eg" target="_blank"><button type="button">الذهاب لمدارس التكنولوجيا</button></a><br>
+    <div id="myContent2" style="display: none;"><h3>تحول التعليم الفني</h3><ul><li>الشراكة مع القطاع الخاص...</li><hr><li>التخصصات الحديثة...</li><hr><li>الشهادات الدولية...</li></ul></div><br>
+    <img src="picture5.jpg" alt="مدارس التكنولوجيا"><br>
   </div>
-  
-  <!-- Section 5 -->
+
   <div id="A5">
     <h2>بوابة مصر الرقمية (الخدمات الحكومية)</h2>
-    <p>إطلاق بوابة مصر الرقمية كمنصة قومية لميكنة كافة الخدمات الحكومية وتوفيرها للمواطنين إلكترونياً بكل سهولة ويسر.</p>
-    <button type="button" onclick="toggleContent('myCont')">اقرأ المزيد</button><br>
-    <div id="myCont" style="display: none;">
-      <h3>خدمات التوثيق والمعاملات</h3>
-      <ul>
-        <li>الخدمات الحكومية: إتاحة مئات الخدمات الإلكترونية للشهر العقاري، المرور، التموين، والتأمينات الاجتماعية.</li><hr>
-        <li>الدفع الإلكتروني: ربط المنصة بجميع وسائل الدفع والتحويلات الرقمية الآمنة للتسهيل على المواطنين.</li><hr>
-        <li>الربط والشفافية: تقليل الاعتماد على المعاملات الورقية وتوفير الوقت والجهد ومحاربة الروتين.</li>
-      </ul>
-    </div>
+    <p>إطلاق بوابة مصر الرقمية كمنصة قومية...</p>
+    <button type="button" onclick="toggleContent('myCont')">اقرأ المزيد</button>
+    <a href="https://digital.gov.eg" target="_blank"><button type="button">الذهاب لبوابة مصر الرقمية</button></a><br>
+    <div id="myCont" style="display: none;"><h3>خدمات التوثيق</h3><ul><li>الخدمات الحكومية...</li><hr><li>الدفع الإلكتروني...</li><hr><li>الربط والشفافية...</li></ul></div>
     <img src="picture6.jpg" alt="بوابة مصر الرقمية"><br>
   </div>
-  
-  <!-- Section 6 -->
+
   <div id="A6">
     <h2>العاصمة الإدارية والمدن الذكية</h2>
-    <p>إنشاء العاصمة الإدارية الجديدة كأول مدينة ذكية مستدامة بالكامل تدار بأحدث أنظمة الذكاء الاصطناعي والتحكم الرقمي.</p>
-    <button type="button" onclick="toggleContent('myCont2')">اقرأ المزيد</button><br>
-    <div id="myCont2" style="display: none;">
-      <h3>البنية الرقمية المتطورة</h3>
-      <ul>
-        <li>مركز السيطرة والتحكم: إدارة ومراقبة خدمات المدينة إلكترونياً من مرافق وأمن ومرور باستخدام الذكاء الاصطناعي.</li><hr>
-        <li>انتقال الحكومة الذكية: تحول كافة الوزارات والهيئات الحكومية إلى بيئة عمل لا ورقية تعمل بالكامل رقمياً.</li><hr>
-        <li>مراكز البيانات العملاقة: استضافة وحماية الحسابات والمحتوى القومي داخل مراكز بيانات متطورة وآمنة.</li>
-      </ul>
-    </div><br>
-    <img src="picture7.jpg" alt="العاصمة الإدارية والمدن الذكية"><br>
+    <p>إنشاء العاصمة الإدارية الجديدة كأول مدينة ذكية...</p>
+    <button type="button" onclick="toggleContent('myCont2')">اقرأ المزيد</button>
+    <a href="https://acud.eg" target="_blank"><button type="button">موقع العاصمة الإدارية</button></a><br>
+    <div id="myCont2" style="display: none;"><h3>البنية الرقمية</h3><ul><li>مركز السيطرة...</li><hr><li>انتقال الحكومة الذكية...</li><hr><li>مراكز البيانات...</li></ul></div><br>
+    <img src="picture7.jpg" alt="العاصمة الإدارية"><br>
   </div>
-  
-  <!-- Section 7 -->
+
   <div id="A7">
     <h2>مركز البيانات والحوسبة السحابية (PCCC)</h2>
-    <p>افتتاح مركز البيانات والحوسبة السحابية القومي ليصبح العقل المفكر والقلب النابض لكافة البيانات والمعاملات الرقمية للدولة.</p>
-    <button type="button" onclick="toggleContent('myCont3')">اقرأ المزيد</button><br>
-    <div id="myCont3" style="display: none;">
-      <h3>الأهمية الاستراتيجية</h3>
-      <ul>
-        <li>السيادة الرقمية: توطين الحوسبة السحابية وحفظ بيانات الدولة والمواطنين داخل حدود الوطن بأعلى مستويات الأمان.</li><hr>
-        <li>تحليل البيانات الضخمة (Big Data): تقديم حلول الذكاء الاصطناعي لدعم اتخاذ القرار في مختلف القطاعات الحيوية.</li><hr>
-        <li>دعم الابتكار: توفير بنية تحتية رقمية فائقة السرعة للشركات الناشئة والمؤسسات البحثية والتعليمية.</li>
-      </ul> 
-    </div><br>
-    <img src="picture8.jpg" alt="مركز البيانات والحوسبة السحابية"><br>
+    <p>افتتاح مركز البيانات والحوسبة السحابية القومي...</p>
+    <button type="button" onclick="toggleContent('myCont3')">اقرأ المزيد</button>
+    <a href="https://mcit.gov.eg" target="_blank"><button type="button">وزارة الاتصالات</button></a><br>
+    <div id="myCont3" style="display: none;"><h3>الأهمية الاستراتيجية</h3><ul><li>السيادة الرقمية...</li><hr><li>تحليل البيانات الضخمة...</li><hr><li>دعم الابتكار...</li></ul></div><br>
+    <img src="picture8.jpg" alt="مركز البيانات"><br>
   </div>
-  
-  <!-- Section Cards -->
+
   <section id="more">
     <div id="cards">
-      <div class="card1">
-        <img src="card1.jpg" alt="مبادرة رواد مصر الرقمية">
-        <h2 class="A1">رواد مصر الرقمية</h2>
-        <p>مبادرة رئاسية لبناء قدرات الشباب والطلاب في مجالات البرمجيات، الذكاء الاصطناعي، والأمن السيبراني.</p>
-      </div>
-      <div class="card2">
-        <img src="card2.jpg" alt="الكارت الموحد">
-        <h2 class="A2">منظومة الكارت الموحد</h2>
-        <p>بطاقة ذكية واحدة لتقديم خدمات التموين، التأمين الصحي الشامل، والمدفوعات الحكومية للمواطن.</p>
-      </div>
-      <div class="card3">
-        <img src="card3.jpg" alt="الشبكة الوطنية للطوارئ">
-        <h2 class="A3">الشبكة الوطنية للطوارئ</h2>
-        <p>شبكة موحدة ومؤمنة لربط جميع خدمات الإسعاف والإطفاء والحماية المدنية لسرعة الاستجابة للأزمات.</p>
-      </div>
-      <div class="card4">
-        <img src="card4.jpg" alt="منصة حصص مصر">
-        <h2 class="A4">منصة حصص مصر</h2>
-        <p>توفير مناهج تفاعلية وأسئلة تدريبية من وزارة التربية والتعليم وفقاً لنظام التقييم الجديد.</p>
-      </div>
-      <div class="card5">
-        <img src="card5.jpg" alt="الفاتورة الإلكترونية">
-        <h2 class="A5">الفاتورة الإلكترونية</h2>
-        <p>تحويل المعاملات الضريبية والتجارية لمستندات رقمية لمكافحة التهرب ودعم الاقتصاد الرسمي.</p>
-      </div>
-      <div class="card6">
-        <img src="card6.jpg" alt="مبادرة الأشبال">
-        <h2 class="A6">مبادرة براعم وأشبال مصر</h2>
-        <p>برامج تعليمية مبكرة لتنمية المهارات التكنولوجية والتفكير المنطقي لطلاب المدارس.</p>
-      </div>
+      <div class="card1"><img src="card1.jpg" alt="رواد مصر الرقمية"><h2>رواد مصر الرقمية</h2><p>مبادرة رئاسية...</p><a href="https://debi.gov.eg" target="_blank"><button>سجل الآن</button></a></div>
+      <div class="card2"><img src="card2.jpg" alt="الكارت الموحد"><h2>منظومة الكارت الموحد</h2><p>بطاقة ذكية واحدة...</p><a href="https://digital.gov.eg" target="_blank"><button>اعرف أكثر</button></a></div>
+      <div class="card3"><img src="card3.jpg" alt="الشبكة الوطنية للطوارئ"><h2>الشبكة الوطنية للطوارئ</h2><p>شبكة موحدة ومؤمنة...</p></div>
+      <div class="card4"><img src="card4.jpg" alt="منصة حصص مصر"><h2>منصة حصص مصر</h2><p>توفير مناهج تفاعلية...</p><a href="https://www.hesas.eg" target="_blank"><button>ادخل المنصة</button></a></div>
+      <div class="card5"><img src="card5.jpg" alt="الفاتورة الإلكترونية"><h2>الفاتورة الإلكترونية</h2><p>تحويل المعاملات الضريبية...</p><a href="https://eta.gov.eg" target="_blank"><button>مصلحة الضرائب</button></a></div>
+      <div class="card6"><img src="card6.jpg" alt="مبادرة الأشبال"><h2>مبادرة براعم وأشبال مصر</h2><p>برامج تعليمية مبكرة...</p><a href="https://debi.gov.eg" target="_blank"><button>سجل لأولادك</button></a></div>
     </div>
   </section>
-  
-  <!-- Section List -->
+
   <div id="List">
     <h2 class="main">قائمة متابعة المبادرات</h2>
     <input type="text" id="myInput" placeholder="أدخل اسم المنصة أو المبادرة الرقمية">
-    <button type="button" id="Btn10" onclick="checkInput()">إضافة للقائمة</button>
+    <button type="button" id="Btn10">إضافة للقائمة</button>
     <p id="message"></p>
     <ul id="myList"></ul>
   </div>
-  
-  <!-- Section Feedback -->
+
   <div id="rate">
     <form>
-      <h2>شاركونا بآرائكم واقتراحاتكم للتحول الرقمي</h2>
-      <label for="name">الاسم بالكامل</label><br>
-      <input type="text" id="name" placeholder="أدخل اسمك"><hr>
-      <label for="tel">رقم الهاتف</label><br>
-      <input type="tel" id="tel" placeholder="أدخل رقم هاتفك"><hr>
-      <label for="feedback">مقترحاتكم وآراؤكم</label><br>
-      <input type="text" id="feedback" placeholder="اكتب مقترحاتك لتطوير الخدمات الرقمية">
-      <div class="Btns">
-        <input type="submit" id="submit" value="إرسال">
-        <input type="reset" id="reset" value="إعادة ضبط">
-      </div>
+      <h2>شاركونا بآرائكم</h2>
+      <label for="name">الاسم بالكامل</label><br><input type="text" id="name" placeholder="أدخل اسمك"><hr>
+      <label for="tel">رقم الهاتف</label><br><input type="tel" id="tel" placeholder="أدخل رقم هاتفك"><hr>
+      <label for="feedback">مقترحاتكم</label><br><input type="text" id="feedback" placeholder="اكتب مقترحاتك">
+      <div class="Btns"><input type="submit" id="submit" value="إرسال"><input type="reset" id="reset" value="إعادة ضبط"></div>
     </form>
   </div>
-  
-  <script src="script.js"></script>
-</body>
 
-</html>
+  <script src="code3.js"></script>
+</body>
+                                                                                                    </html>
