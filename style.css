@@ -2,36 +2,56 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-main: #f5f6fb;
+  --bg-card: #ffffff;
+  --text-main: #1b4ecd;
+  --text-dark: #00008B;
+  --border-color: #DDDDDD;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+body.dark-theme {
+  --bg-main: #12131a;
+  --bg-card: #1e1f2b;
+  --text-main: #a8b5e0;
+  --text-dark: #e0e0ff;
+  --border-color: #2f3042;
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
 body {
   margin: 0;
   padding: 20px 40px;
-  background-color: #f5f6fb;
+  background-color: var(--bg-main);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   direction: rtl;
   text-align: right;
-  color: #1b4ecd;
+  color: var(--text-main);
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
+
 h1 {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
-  color: #1b4ecd;
+  color: var(--text-main);
   margin-bottom: 10px;
 }
 
 h2 {
-  color: #1b4ecd;
+  color: var(--text-main);
   font-size: 28px;
   margin-top: 0;
 }
 
 h3 {
-  color: #1b4ecd;
+  color: var(--text-main);
   font-size: 22px;
 }
 
 p {
-  color: #1b4ecd;
+  color: var(--text-main);
   font-size: 18px;
   line-height: 1.6;
 }
@@ -41,9 +61,12 @@ li {
   font-weight: bold;
   margin-bottom: 8px;
 }
+body.dark-theme li {
+  color: var(--text-main);
+}
 
 .text {
-  color: #00008B;
+  color: var(--text-dark);
   font-size: 24px;
 }
 
@@ -56,13 +79,13 @@ li {
   text-align: center;
 }
 .navbar {
-  background-color: #ffffff;
+  background-color: var(--bg-card);
   padding: 24px 32px;
   border-radius: 32px;
   margin: 20px auto 40px auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, border-color 0.3s ease;
-  border: 1px solid #DDDDDD;
+  box-shadow: 0 4px 12px var(--shadow);
+  transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.4s ease;
+  border: 1px solid var(--border-color);
   text-align: center;
 }
 
@@ -81,7 +104,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #00008B;
+  color: var(--text-dark);
   font-weight: bold;
   font-size: 18px;
   transition: color 0.25s ease, transform 0.25s ease;
@@ -94,6 +117,7 @@ a:hover {
   transform: scale(1.05) translateY(-2px);
   text-shadow: 0 0 4px rgba(0, 0, 139, 0.2);
 }
+
 button {
   margin: 12px 0;
   color: #ffffff;
@@ -119,6 +143,19 @@ button:active {
   background-color: #000060;
 }
 
+/* زراير الثيم واللغة */
+#themeToggle, #langToggle {
+  background-color: var(--bg-card);
+  color: var(--text-dark);
+  border: 1px solid var(--border-color);
+  padding: 8px 18px;
+  font-size: 14px;
+}
+#themeToggle:hover, #langToggle:hover {
+  background-color: #00008B;
+  color: #fff;
+}
+
 input[type="text"],
 input[type="tel"] {
   width: 100%;
@@ -130,6 +167,13 @@ input[type="tel"] {
   font-size: 16px;
   outline: none;
   transition: border-color 0.25s ease;
+  background-color: var(--bg-card);
+  color: var(--text-main);
+}
+body.dark-theme input[type="text"],
+body.dark-theme input[type="tel"] {
+  border-color: var(--border-color);
+  background-color: #2a2b3a;
 }
 
 input[type="text"]:focus,
@@ -165,23 +209,40 @@ input[type="tel"]:focus {
   transform: translateY(-2px) scale(1.03);
 }
 
-#Btn10 {
+#Btn10, #searchBtn {
   width: 40%;
   min-width: 150px;
   display: block;
   margin: 0 auto 16px auto;
 }
+
+#searchArea {
+  margin: 30px auto;
+  background-color: var(--bg-card);
+  border-radius: 32px;
+  padding: 25px 35px;
+  box-shadow: 0 4px 12px var(--shadow);
+  border: 1px solid var(--border-color);
+  text-align: center;
+  transition: background-color 0.4s ease;
+}
+#searchArea input {
+  max-width: 400px;
+  margin: 0;
+  display: inline-block;
+}
+
 #hero,
 #A1, #A2, #A3, #A4, #A5, #A6, #A7,
 #List,
 #rate {
   margin: 30px auto;
-  background-color: #ffffff;
+  background-color: var(--bg-card);
   border-radius: 32px;
   padding: 35px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, border-color 0.3s ease;
-  border: 1px solid #DDDDDD;
+  box-shadow: 0 4px 12px var(--shadow);
+  transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.4s ease;
+  border: 1px solid var(--border-color);
 }
 
 #hero {
@@ -196,7 +257,8 @@ input[type="tel"]:focus {
 #hero:hover,
 #A1:hover, #A2:hover, #A3:hover, #A4:hover, #A5:hover, #A6:hover, #A7:hover,
 #List:hover,
-#rate:hover {
+#rate:hover,
+#searchArea:hover {
   transform: translateY(-4px);
   border-color: #00008B;
 }
@@ -221,12 +283,12 @@ img {
 }
 
 .card1, .card2, .card3, .card4, .card5, .card6 {
-  background-color: #ffffff;
+  background-color: var(--bg-card);
   border-radius: 28px;
   padding: 24px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, border-color 0.3s ease;
-  border: 1px solid #DDDDDD;
+  box-shadow: 0 4px 12px var(--shadow);
+  transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.4s ease;
+  border: 1px solid var(--border-color);
 }
 
 .card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover {
@@ -248,10 +310,10 @@ img {
 }
 
 #myList li {
-  background: #ffffff;
+  background: var(--bg-card);
   padding: 14px 20px;
   border-radius: 24px;
-  border: 1px solid #DDDDDD;
+  border: 1px solid var(--border-color);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   display: flex;
   justify-content: space-between;
@@ -272,11 +334,12 @@ img {
   background-color: #c9302c;
 }
 
-#message {
+#message, #searchResult {
   text-align: center;
   font-weight: bold;
   margin-top: 8px;
 }
+
 @media (max-width: 768px) {
   body {
     padding: 10px 16px;
@@ -286,7 +349,7 @@ img {
     width: 100%;
   }
 
-  #submit, #reset, #Btn10 {
+  #submit, #reset, #Btn10, #searchBtn {
     width: 100%;
     margin: 8px 0;
   }
@@ -298,4 +361,4 @@ img {
 }
 #tel {
   text-align: right;
-}
+  }
