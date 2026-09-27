@@ -143,7 +143,6 @@ button:active {
   background-color: #000060;
 }
 
-/* زراير الثيم واللغة */
 #themeToggle, #langToggle {
   background-color: var(--bg-card);
   color: var(--text-dark);
@@ -361,4 +360,40 @@ img {
 }
 #tel {
   text-align: right;
-  }
+}
+
+/* === الفوتر الجديد - مضاف فقط === */
+.footer{
+  background-color: var(--bg-card);
+  text-align: center;
+  padding: 28px 20px;
+  margin-top: 50px;
+  border-radius: 28px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 12px var(--shadow);
+  transition: all 0.3s ease;
+}
+.footer:hover{
+  border-color: #00008B;
+  transform: translateY(-3px);
+}
+.footer-content h3{
+  color: var(--text-dark);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.footer-content p{
+  font-size: 15px;
+  margin: 6px 0;
+  opacity: 0.9;
+}
+.footer-links{
+  margin-top: 14px;
+}
+.footer-links a{
+  font-size: 15px;
+  color: var(--text-dark);
+}
+.footer-links a:hover{
+  color: #1E90FF;
+}
