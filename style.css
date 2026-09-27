@@ -129,7 +129,6 @@ button {
   font-weight: bold;
   transition: all 0.25s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 139, 0.25);
-  cursor: pointer;
 }
 
 button:hover {
@@ -198,7 +197,6 @@ input[type="tel"]:focus {
   font-weight: bold;
   transition: all 0.25s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 139, 0.3);
-  cursor: pointer;
   margin: 0 8px;
 }
 
@@ -362,7 +360,6 @@ img {
   text-align: right;
 }
 
-/* === الفوتر الجديد - مضاف فقط === */
 .footer{
   background-color: var(--bg-card);
   text-align: center;
