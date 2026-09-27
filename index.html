@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <title>إنجازات مصر في التحول الرقمي والتعليم</title>
 </head>
-<body>
+<body id="top">
   <nav class="navbar">
     <h2 class="topic" data-ar="بوابة مصر الرقمية والتعليمية" data-en="Egypt Digital & Education Portal">بوابة مصر الرقمية والتعليمية</h2>
     <div class="navlinks">
@@ -16,14 +16,12 @@
       <a href="#List" data-ar="قائمة اهتماماتي" data-en="My List">قائمة اهتماماتي</a>
       <a href="#rate" data-ar="آراؤكم" data-en="Feedback">آراؤكم واستفساراتكم</a>
     </div>
-    <!-- زراير التحكم الجديدة -->
     <div style="margin-top:15px; display:flex; gap:10px; justify-content:center;">
       <button type="button" id="themeToggle">🌙 الوضع الداكن</button>
       <button type="button" id="langToggle">English</button>
     </div>
   </nav>
 
-  <!-- مكان البحث -->
   <div id="searchArea">
     <h2 data-ar="ابحث عن منصة أو مبادرة" data-en="Search for a platform">ابحث عن منصة أو مبادرة</h2>
     <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
@@ -44,93 +42,104 @@
     <p data-ar="يُعد بنك المعرفة المصري أحد أكبر المكتبات الرقمية..." data-en="The Egyptian Knowledge Bank is one of the largest digital libraries...">يُعد بنك المعرفة المصري أحد أكبر المكتبات الرقمية والمجالس العلمية على مستوى العالم...</p>
     <button type="button" onclick="toggleContent('myText')" data-ar="اقرأ المزيد" data-en="Read More">اقرأ المزيد</button>
     <a href="https://www.ekb.eg" target="_blank"><button type="button" data-ar="الذهاب للمنصة" data-en="Go to Platform">الذهاب للمنصة</button></a>
-    <div id="myText" style="display: none;"><h3>أبرز المميزات</h3><ul><li>الإتاحة المفتوحة...</li><hr><li>الربط بالمناهج...</li><hr><li>دعم البحث العلمي...</li></ul></div><br>
+    <div id="myText" style="display: none;"><h3 data-ar="أبرز المميزات" data-en="Key Features">أبرز المميزات</h3><ul><li>الإتاحة المفتوحة...</li><hr><li>الربط بالمناهج...</li><hr><li>دعم البحث العلمي...</li></ul></div><br>
     <img src="picture2.jpg" alt="بنك المعرفة المصري"><br>
   </div>
 
   <div id="A2">
     <h2 data-ar="منظومة الامتحانات والإدارة الإلكترونية" data-en="E-Exams & Management System">منظومة الامتحانات والإدارة الإلكترونية</h2>
-    <p>نجحت وزارة التربية والتعليم في تطبيق أكبر نظام تقييم إلكتروني...</p>
-    <button type="button" onclick="toggleContent('myText2')">اقرأ المزيد</button>
-    <a href="https://moe.gov.eg" target="_blank"><button type="button">الذهاب للوزارة</button></a><br>
-    <div id="myText2" style="display: none;"><h3>تفاصيل المنظومة</h3><ul><li>البنية التحتية...</li><hr><li>توزيع التابلت...</li><hr><li>مراكز التصحيح...</li></ul></div><br>
+    <p data-ar="نجحت وزارة التربية والتعليم في تطبيق أكبر نظام تقييم إلكتروني..." data-en="The Ministry of Education applied the largest e-assessment system...">نجحت وزارة التربية والتعليم في تطبيق أكبر نظام تقييم إلكتروني...</p>
+    <button type="button" onclick="toggleContent('myText2')" data-ar="اقرأ المزيد" data-en="Read More">اقرأ المزيد</button>
+    <a href="https://moe.gov.eg" target="_blank"><button type="button" data-ar="الذهاب للوزارة" data-en="Go to Ministry">الذهاب للوزارة</button></a><br>
+    <div id="myText2" style="display: none;"><h3 data-ar="تفاصيل المنظومة" data-en="System Details">تفاصيل المنظومة</h3><ul><li data-ar="البنية التحتية..." data-en="Digital infrastructure...">البنية التحتية...</li><hr><li data-ar="توزيع التابلت..." data-en="Tablet distribution...">توزيع التابلت...</li><hr><li data-ar="مراكز التصحيح..." data-en="E-correction centers...">مراكز التصحيح...</li></ul></div><br>
     <img src="picture3.jpg" alt="الامتحانات"><br>
   </div>
 
   <div id="A3">
-    <h2>منصات التعلم والتواصل (مدرستنا وقنوات البث)</h2>
-    <p>تطوير منظومة قنوات "مدرستنا"...</p>
-    <button type="button" onclick="toggleContent('myContent')">اقرأ المزيد</button>
-    <a href="https://madrasetna.edu.eg" target="_blank"><button type="button">الذهاب لمنصة مدرستنا</button></a>
-    <div id="myContent" style="display: none;"><h3>شبكة التعلم التفاعلي</h3><ul><li>قنوات مدرستنا...</li><hr><li>منصة البث المباشر...</li><hr><li>تطبيق مدرستنا بلس...</li></ul></div><br>
+    <h2 data-ar="منصات التعلم والتواصل (مدرستنا وقنوات البث)" data-en="Learning Platforms (Madrasetna)">منصات التعلم والتواصل (مدرستنا وقنوات البث)</h2>
+    <p data-ar="تطوير منظومة قنوات مدرستنا..." data-en="Developing Madrasetna channels system...">تطوير منظومة قنوات "مدرستنا"...</p>
+    <button type="button" onclick="toggleContent('myContent')" data-ar="اقرأ المزيد" data-en="Read More">اقرأ المزيد</button>
+    <a href="https://madrasetna.edu.eg" target="_blank"><button type="button" data-ar="الذهاب لمنصة مدرستنا" data-en="Go to Madrasetna">الذهاب لمنصة مدرستنا</button></a>
+    <div id="myContent" style="display: none;"><h3 data-ar="شبكة التعلم التفاعلي" data-en="Interactive Learning Network">شبكة التعلم التفاعلي</h3><ul><li data-ar="قنوات مدرستنا..." data-en="Madrasetna channels...">قنوات مدرستنا...</li><hr><li data-ar="منصة البث المباشر..." data-en="Live broadcast platform...">منصة البث المباشر...</li><hr><li data-ar="تطبيق مدرستنا بلس..." data-en="Madrasetna Plus App...">تطبيق مدرستنا بلس...</li></ul></div><br>
     <img src="picture4.jpg" alt="مدرستنا"><br>
   </div>
 
   <div id="A4">
-    <h2>مدارس التكنولوجيا التطبيقية والذكاء الاصطناعي</h2>
-    <p>إعادة صياغة التعليم الفني والمهني...</p>
-    <button type="button" onclick="toggleContent('myContent2')">اقرأ المزيد</button>
-    <a href="https://iatseg.moe.gov.eg" target="_blank"><button type="button">الذهاب لمدارس التكنولوجيا</button></a><br>
-    <div id="myContent2" style="display: none;"><h3>تحول التعليم الفني</h3><ul><li>الشراكة مع القطاع الخاص...</li><hr><li>التخصصات الحديثة...</li><hr><li>الشهادات الدولية...</li></ul></div><br>
+    <h2 data-ar="مدارس التكنولوجيا التطبيقية والذكاء الاصطناعي" data-en="Applied Tech & AI Schools">مدارس التكنولوجيا التطبيقية والذكاء الاصطناعي</h2>
+    <p data-ar="إعادة صياغة التعليم الفني والمهني..." data-en="Reformulating technical education...">إعادة صياغة التعليم الفني والمهني...</p>
+    <button type="button" onclick="toggleContent('myContent2')" data-ar="اقرأ المزيد" data-en="Read More">اقرأ المزيد</button>
+    <a href="https://iatseg.moe.gov.eg" target="_blank"><button type="button" data-ar="الذهاب لمدارس التكنولوجيا" data-en="Go to Tech Schools">الذهاب لمدارس التكنولوجيا</button></a><br>
+    <div id="myContent2" style="display: none;"><h3 data-ar="تحول التعليم الفني" data-en="Technical Education Transformation">تحول التعليم الفني</h3><ul><li data-ar="الشراكة مع القطاع الخاص..." data-en="Partnership with private sector...">الشراكة مع القطاع الخاص...</li><hr><li data-ar="التخصصات الحديثة..." data-en="Modern specializations...">التخصصات الحديثة...</li><hr><li data-ar="الشهادات الدولية..." data-en="International certificates...">الشهادات الدولية...</li></ul></div><br>
     <img src="picture5.jpg" alt="مدارس التكنولوجيا"><br>
   </div>
 
   <div id="A5">
-    <h2>بوابة مصر الرقمية (الخدمات الحكومية)</h2>
-    <p>إطلاق بوابة مصر الرقمية كمنصة قومية...</p>
-    <button type="button" onclick="toggleContent('myCont')">اقرأ المزيد</button>
-    <a href="https://digital.gov.eg" target="_blank"><button type="button">الذهاب لبوابة مصر الرقمية</button></a><br>
-    <div id="myCont" style="display: none;"><h3>خدمات التوثيق</h3><ul><li>الخدمات الحكومية...</li><hr><li>الدفع الإلكتروني...</li><hr><li>الربط والشفافية...</li></ul></div>
+    <h2 data-ar="بوابة مصر الرقمية (الخدمات الحكومية)" data-en="Egypt Digital Portal">بوابة مصر الرقمية (الخدمات الحكومية)</h2>
+    <p data-ar="إطلاق بوابة مصر الرقمية كمنصة قومية..." data-en="Launching Egypt Digital Portal as a national platform...">إطلاق بوابة مصر الرقمية كمنصة قومية...</p>
+    <button type="button" onclick="toggleContent('myCont')" data-ar="اقرأ المزيد" data-en="Read More">اقرأ المزيد</button>
+    <a href="https://digital.gov.eg" target="_blank"><button type="button" data-ar="الذهاب لبوابة مصر الرقمية" data-en="Go to Digital Egypt">الذهاب لبوابة مصر الرقمية</button></a><br>
+    <div id="myCont" style="display: none;"><h3 data-ar="خدمات التوثيق" data-en="Documentation Services">خدمات التوثيق</h3><ul><li data-ar="الخدمات الحكومية..." data-en="Government services...">الخدمات الحكومية...</li><hr><li data-ar="الدفع الإلكتروني..." data-en="E-payment...">الدفع الإلكتروني...</li><hr><li data-ar="الربط والشفافية..." data-en="Integration & transparency...">الربط والشفافية...</li></ul></div>
     <img src="picture6.jpg" alt="بوابة مصر الرقمية"><br>
   </div>
 
   <div id="A6">
-    <h2>العاصمة الإدارية والمدن الذكية</h2>
-    <p>إنشاء العاصمة الإدارية الجديدة كأول مدينة ذكية...</p>
-    <button type="button" onclick="toggleContent('myCont2')">اقرأ المزيد</button>
-    <a href="https://acud.eg" target="_blank"><button type="button">موقع العاصمة الإدارية</button></a><br>
-    <div id="myCont2" style="display: none;"><h3>البنية الرقمية</h3><ul><li>مركز السيطرة...</li><hr><li>انتقال الحكومة الذكية...</li><hr><li>مراكز البيانات...</li></ul></div><br>
+    <h2 data-ar="العاصمة الإدارية والمدن الذكية" data-en="New Capital & Smart Cities">العاصمة الإدارية والمدن الذكية</h2>
+    <p data-ar="إنشاء العاصمة الإدارية الجديدة كأول مدينة ذكية..." data-en="Building the New Capital as the first smart city...">إنشاء العاصمة الإدارية الجديدة كأول مدينة ذكية...</p>
+    <button type="button" onclick="toggleContent('myCont2')" data-ar="اقرأ المزيد" data-en="Read More">اقرأ المزيد</button>
+    <a href="https://acud.eg" target="_blank"><button type="button" data-ar="موقع العاصمة الإدارية" data-en="New Capital Website">موقع العاصمة الإدارية</button></a><br>
+    <div id="myCont2" style="display: none;"><h3 data-ar="البنية الرقمية" data-en="Digital Infrastructure">البنية الرقمية</h3><ul><li data-ar="مركز السيطرة..." data-en="Command center...">مركز السيطرة...</li><hr><li data-ar="انتقال الحكومة الذكية..." data-en="Smart government transition...">انتقال الحكومة الذكية...</li><hr><li data-ar="مراكز البيانات..." data-en="Data centers...">مراكز البيانات...</li></ul></div><br>
     <img src="picture7.jpg" alt="العاصمة الإدارية"><br>
   </div>
 
   <div id="A7">
-    <h2>مركز البيانات والحوسبة السحابية (PCCC)</h2>
-    <p>افتتاح مركز البيانات والحوسبة السحابية القومي...</p>
-    <button type="button" onclick="toggleContent('myCont3')">اقرأ المزيد</button>
-    <a href="https://mcit.gov.eg" target="_blank"><button type="button">وزارة الاتصالات</button></a><br>
-    <div id="myCont3" style="display: none;"><h3>الأهمية الاستراتيجية</h3><ul><li>السيادة الرقمية...</li><hr><li>تحليل البيانات الضخمة...</li><hr><li>دعم الابتكار...</li></ul></div><br>
+    <h2 data-ar="مركز البيانات والحوسبة السحابية (PCCC)" data-en="Data Center & Cloud (PCCC)">مركز البيانات والحوسبة السحابية (PCCC)</h2>
+    <p data-ar="افتتاح مركز البيانات والحوسبة السحابية القومي..." data-en="Opening the national data center...">افتتاح مركز البيانات والحوسبة السحابية القومي...</p>
+    <button type="button" onclick="toggleContent('myCont3')" data-ar="اقرأ المزيد" data-en="Read More">اقرأ المزيد</button>
+    <a href="https://mcit.gov.eg" target="_blank"><button type="button" data-ar="وزارة الاتصالات" data-en="MCIT">وزارة الاتصالات</button></a><br>
+    <div id="myCont3" style="display: none;"><h3 data-ar="الأهمية الاستراتيجية" data-en="Strategic Importance">الأهمية الاستراتيجية</h3><ul><li data-ar="السيادة الرقمية..." data-en="Digital sovereignty...">السيادة الرقمية...</li><hr><li data-ar="تحليل البيانات الضخمة..." data-en="Big data analysis...">تحليل البيانات الضخمة...</li><hr><li data-ar="دعم الابتكار..." data-en="Supporting innovation...">دعم الابتكار...</li></ul></div><br>
     <img src="picture8.jpg" alt="مركز البيانات"><br>
   </div>
 
   <section id="more">
     <div id="cards">
-      <div class="card1"><img src="card1.jpg" alt="رواد مصر الرقمية"><h2>رواد مصر الرقمية</h2><p>مبادرة رئاسية...</p><a href="https://debi.gov.eg" target="_blank"><button>سجل الآن</button></a></div>
-      <div class="card2"><img src="card2.jpg" alt="الكارت الموحد"><h2>منظومة الكارت الموحد</h2><p>بطاقة ذكية واحدة...</p><a href="https://digital.gov.eg" target="_blank"><button>اعرف أكثر</button></a></div>
-      <div class="card3"><img src="card3.jpg" alt="الشبكة الوطنية للطوارئ"><h2>الشبكة الوطنية للطوارئ</h2><p>شبكة موحدة ومؤمنة...</p></div>
-      <div class="card4"><img src="card4.jpg" alt="منصة حصص مصر"><h2>منصة حصص مصر</h2><p>توفير مناهج تفاعلية...</p><a href="https://www.hesas.eg" target="_blank"><button>ادخل المنصة</button></a></div>
-      <div class="card5"><img src="card5.jpg" alt="الفاتورة الإلكترونية"><h2>الفاتورة الإلكترونية</h2><p>تحويل المعاملات الضريبية...</p><a href="https://eta.gov.eg" target="_blank"><button>مصلحة الضرائب</button></a></div>
-      <div class="card6"><img src="card6.jpg" alt="مبادرة الأشبال"><h2>مبادرة براعم وأشبال مصر</h2><p>برامج تعليمية مبكرة...</p><a href="https://debi.gov.eg" target="_blank"><button>سجل لأولادك</button></a></div>
+      <div class="card1"><img src="card1.jpg" alt="رواد مصر الرقمية"><h2 data-ar="رواد مصر الرقمية" data-en="Digital Egypt Pioneers">رواد مصر الرقمية</h2><p data-ar="مبادرة رئاسية..." data-en="Presidential initiative...">مبادرة رئاسية...</p><a href="https://debi.gov.eg" target="_blank"><button data-ar="سجل الآن" data-en="Register Now">سجل الآن</button></a></div>
+      <div class="card2"><img src="card2.jpg" alt="الكارت الموحد"><h2 data-ar="منظومة الكارت الموحد" data-en="Unified Card System">منظومة الكارت الموحد</h2><p data-ar="بطاقة ذكية واحدة..." data-en="One smart card...">بطاقة ذكية واحدة...</p><a href="https://digital.gov.eg" target="_blank"><button data-ar="اعرف أكثر" data-en="Learn More">اعرف أكثر</button></a></div>
+      <div class="card3"><img src="card3.jpg" alt="الشبكة الوطنية للطوارئ"><h2 data-ar="الشبكة الوطنية للطوارئ" data-en="National Emergency Network">الشبكة الوطنية للطوارئ</h2><p data-ar="شبكة موحدة ومؤمنة..." data-en="Unified secure network...">شبكة موحدة ومؤمنة...</p></div>
+      <div class="card4"><img src="card4.jpg" alt="منصة حصص مصر"><h2 data-ar="منصة حصص مصر" data-en="Hesas Misr Platform">منصة حصص مصر</h2><p data-ar="توفير مناهج تفاعلية..." data-en="Interactive curricula...">توفير مناهج تفاعلية...</p><a href="https://www.hesas.eg" target="_blank"><button data-ar="ادخل المنصة" data-en="Enter Platform">ادخل المنصة</button></a></div>
+      <div class="card5"><img src="card5.jpg" alt="الفاتورة الإلكترونية"><h2 data-ar="الفاتورة الإلكترونية" data-en="E-Invoice">الفاتورة الإلكترونية</h2><p data-ar="تحويل المعاملات الضريبية..." data-en="Transforming tax transactions...">تحويل المعاملات الضريبية...</p><a href="https://eta.gov.eg" target="_blank"><button data-ar="مصلحة الضرائب" data-en="Tax Authority">مصلحة الضرائب</button></a></div>
+      <div class="card6"><img src="card6.jpg" alt="مبادرة الأشبال"><h2 data-ar="مبادرة براعم وأشبال مصر" data-en="Baram & Ashbal Initiative">مبادرة براعم وأشبال مصر</h2><p data-ar="برامج تعليمية مبكرة..." data-en="Early educational programs...">برامج تعليمية مبكرة...</p><a href="https://debi.gov.eg" target="_blank"><button data-ar="سجل لأولادك" data-en="Register Kids">سجل لأولادك</button></a></div>
     </div>
   </section>
 
   <div id="List">
-    <h2 class="main">قائمة متابعة المبادرات</h2>
+    <h2 class="main" data-ar="قائمة متابعة المبادرات" data-en="My Initiatives List">قائمة متابعة المبادرات</h2>
     <input type="text" id="myInput" placeholder="أدخل اسم المنصة أو المبادرة الرقمية">
-    <button type="button" id="Btn10">إضافة للقائمة</button>
+    <button type="button" id="Btn10" data-ar="إضافة للقائمة" data-en="Add to List">إضافة للقائمة</button>
     <p id="message"></p>
     <ul id="myList"></ul>
   </div>
 
   <div id="rate">
     <form>
-      <h2>شاركونا بآرائكم</h2>
-      <label for="name">الاسم بالكامل</label><br><input type="text" id="name" placeholder="أدخل اسمك"><hr>
-      <label for="tel">رقم الهاتف</label><br><input type="tel" id="tel" placeholder="أدخل رقم هاتفك"><hr>
-      <label for="feedback">مقترحاتكم</label><br><input type="text" id="feedback" placeholder="اكتب مقترحاتك">
+      <h2 data-ar="شاركونا بآرائكم" data-en="Share Your Feedback">شاركونا بآرائكم</h2>
+      <label for="name" data-ar="الاسم بالكامل" data-en="Full Name">الاسم بالكامل</label><br><input type="text" id="name" placeholder="أدخل اسمك"><hr>
+      <label for="tel" data-ar="رقم الهاتف" data-en="Phone Number">رقم الهاتف</label><br><input type="tel" id="tel" placeholder="أدخل رقم هاتفك"><hr>
+      <label for="feedback" data-ar="مقترحاتكم" data-en="Your Suggestions">مقترحاتكم</label><br><input type="text" id="feedback" placeholder="اكتب مقترحاتك">
       <div class="Btns"><input type="submit" id="submit" value="إرسال"><input type="reset" id="reset" value="إعادة ضبط"></div>
     </form>
   </div>
 
+  <footer class="footer">
+    <div class="footer-content">
+      <h3 data-ar="بوابة مصر الرقمية والتعليمية" data-en="Egypt Digital & Education Portal">بوابة مصر الرقمية والتعليمية</h3>
+      <p data-ar="مشروع تعليمي يهدف لتجميع المنصات الرقمية في مكان واحد" data-en="An educational project gathering digital platforms in one place">مشروع تعليمي يهدف لتجميع المنصات الرقمية في مكان واحد</p>
+      <p data-ar="تم التطوير بواسطة أحمد صبري © 2026" data-en="Developed by Ahmed Sabry © 2026">تم التطوير بواسطة أحمد صبري © 2026</p>
+      <div class="footer-links">
+        <a href="#top" data-ar="العودة للأعلى ↑" data-en="Back to Top ↑">العودة للأعلى ↑</a>
+      </div>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
-                                                                                                    </html>
+</html>
